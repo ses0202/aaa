@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Document</title>
+    <style>
+        .highlight {
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">id</h1>
+    <p>This is a paragraph.</p>
+    <button id="btn">id1</button>
+    <script>
+        
+        const titleElement = document.querySelector('#title');
+        titleElement.textContent = 'id2';
+
+        const btnElement = document.querySelector('#btn');
+        btnElement.setAttribute('onclick', 'alert("id2")');
+
+        const paragraphElement = document.querySelector('p');
+        paragraphElement.style.color = 'blue';
+
+        const titleElement = document.querySelector('#title');
+        titleElement.classList.add('highlight');
+    </script>
+</body>
+</html>
